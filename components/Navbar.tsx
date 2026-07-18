@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 type NavigationItem = {
   label: string;
-  href: `#${string}`;
+  href: string;
 };
 
 const navigationItems: NavigationItem[] = [
@@ -13,7 +13,7 @@ const navigationItems: NavigationItem[] = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Resume", href: "#resume" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 type NavbarProps = {
@@ -38,7 +38,7 @@ export function Navbar({
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, []);
 
-  const scrollToSection = (href: NavigationItem["href"]) => {
+  const scrollToSection = (href: string) => {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     window.history.pushState(null, "", href);
     setIsMenuOpen(false);
@@ -46,8 +46,9 @@ export function Navbar({
 
   const handleNavigation = (
     event: React.MouseEvent<HTMLAnchorElement>,
-    href: NavigationItem["href"],
+    href: string,
   ) => {
+    if (!href.startsWith("#")) return;
     event.preventDefault();
     scrollToSection(href);
   };
