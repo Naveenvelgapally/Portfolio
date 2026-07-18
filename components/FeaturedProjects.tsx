@@ -11,6 +11,7 @@ const projects = [
     title: "FPGA Robotics",
     description: "A real-time FPGA control platform that integrates sensor inputs, motor control, and deterministic decision-making for a mobile robot.",
     technologies: ["Verilog", "Xilinx Vivado", "AXI", "Embedded Systems"],
+    href: "/projects/fpga-robotics",
   },
   {
     title: "GEMM Accelerator",
