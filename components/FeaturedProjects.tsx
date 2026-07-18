@@ -5,6 +5,7 @@ const projects = [
     title: "RTL to GDSII",
     description: "An end-to-end digital implementation flow, taking a synthesizable RTL design through timing-aware physical design and sign-off preparation.",
     technologies: ["SystemVerilog", "Synthesis", "STA", "Physical Design"],
+    href: "/projects/rtl-to-gdsii",
   },
   {
     title: "FPGA Robotics",
