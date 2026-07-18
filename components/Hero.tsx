@@ -9,7 +9,7 @@ type HeroProps = {
 
 const capabilities = ["RTL Design", "FPGA Prototyping", "ASIC Verification"];
 
-export function Hero({ name = "Your Name", cvUrl = "/resume.pdf" }: HeroProps) {
+export function Hero({ name = "Naveen Velgapally", cvUrl = "/resume.pdf" }: HeroProps) {
   const reduceMotion = useReducedMotion();
   const transition = reduceMotion ? { duration: 0 } : { duration: 0.6, ease: "easeOut" as const };
 

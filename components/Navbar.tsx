@@ -25,7 +25,7 @@ type NavbarProps = {
 export function Navbar({
   brand = "Portfolio",
   githubUrl = "https://github.com/",
-  linkedinUrl = "https://www.linkedin.com/",
+  linkedinUrl = "https://linkedin.com/in/naveen-velgapally-5177b7210/",
 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
