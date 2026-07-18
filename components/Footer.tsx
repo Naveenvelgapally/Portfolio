@@ -5,9 +5,9 @@ type FooterProps = {
 };
 
 export function Footer({
-  name = "Your Name",
+  name = "Naveen Velgapally",
   githubUrl = "https://github.com/",
-  linkedinUrl = "https://www.linkedin.com/",
+  linkedinUrl = "https://linkedin.com/in/naveen-velgapally-5177b7210/",
 }: FooterProps) {
   const year = new Date().getFullYear();
 
